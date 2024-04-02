@@ -30,7 +30,7 @@ def index():
                 id=user.get_id(),
                 photos=photo_db.get_files())
 
-# アルバムに入っている画像一覧を表示 --- (*3)
+# アルバムに入っている画像一覧を表示 --- (*3)idはアルバムのID
 @app.route('/album/<album_id>')
 @user.login_required
 def album_show(album_id):
