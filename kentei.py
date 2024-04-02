@@ -1,10 +1,4 @@
-def function(number, default_arg_list=[]):
-    default_arg_list.append(number)
-    return default_arg_list
-
-
-print(function(1))  # [1]
-print(function(2,[3,4]))  # [3, 4, 2]
-print(function(3))  # [1, 3]
-print(function(4,[5,6]))  # [5, 6, 4]
-print(function(5))  # [1, 3, 5]
+func = lambda a, b: (b + 1, a * 2) #lambda式がよく理解できない
+x, y = 1, 2 #x, yに1, 2を代入
+x, y = func(x, y) #func(x, y)の返り値をx, yに代入
+print(x, y) #x, yを出力
