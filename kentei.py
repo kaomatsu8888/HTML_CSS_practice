@@ -1,4 +1,25 @@
-func = lambda a, b: (b + 1, a * 2) #lambda式がよく理解できない
-x, y = 1, 2 #x, yに1, 2を代入
-x, y = func(x, y) #func(x, y)の返り値をx, yに代入
-print(x, y) #x, yを出力
+class Duck:
+    def __init__(self):
+        self.birdsong = 'ガーガー'
+
+    def sing(self):
+        birdsong = 'カーカー'
+        print(birdsong)
+        print(self.birdsong)
+        self.birdsong = 'ピヨピヨ'
+        print(self.birdsong)
+        print(birdsong)
+
+
+duck = Duck()
+duck.sing()
+
+# 実行結果の順番解説
+# 1. birdsong = 'カーカー'
+# 2. print(birdsong) -> カーカー
+# 3. print(self.birdsong) -> ガーガー
+# 4. self.birdsong = 'ピヨピヨ'
+# 5. print(self.birdsong) -> ピヨピヨ
+# 6. print(birdsong) -> カーカー
+# 7. print(self.birdsong) -> ピヨピヨ
+

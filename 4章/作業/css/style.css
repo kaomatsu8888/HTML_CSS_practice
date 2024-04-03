@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+  background-color: #bbf1ef;
+  /* 変更クリアブルーに */
+  font-family: 'verdana', 'Hiragino Sans', 'Meiryo', sans-serif;
+}
+
+/* # 上記font-familyはボディー内が対象ですよね？h1とかも反映されるのでしょうか？ */
+/* はい、ご指定のfont-familyの設定は、bodyタグに適用されているため、ページ全体に影響します 
+Q 不思議なのが、イメージとしてはbody内だけ反映なのですが、なぜbody内で指定したら全てのフォントが反映されるのでしょうか？
+その疑問はとても理解できます。CSSにおいて、bodyタグにスタイルを指定すると、そのスタイルはbodyタグ内に含まれる全ての要素に「継承」されるという原則が働くためです。font-familyのようなテキストに関するプロパティは、子要素に継承されやすい特性の一つです。
+これは、ページ全体で一貫したフォントスタイルを簡単に適用するための便利な仕組みとして機能します。CSSでは、特定のプロパティが「継承可能」かどうかによって、その挙動が決定されます。継承可能なプロパティは、親要素から子要素へ自動的に引き継がれるのです。font-familyはこのように継承されるプロパティの良い例です。
+
+したがって、bodyタグにfont-familyを指定すると、その設定はbody内のすべての要素に適用されます。ただし、特定の要素で異なるfont-familyを指定した場合、その指定は継承されたスタイルを上書きし、その要素にのみ適用されます。
+
+この仕組みは、ウェブページの全体的なデザインを統一しやすくするために設計されています。
+bodyにfont-familyを指定することで、ページ全体に一貫した読みやすいフォントを提供し、
+個々の要素に対して必要に応じて異なるフォントスタイルを適用できる柔軟性が得られるのです。*/
+
+h1 {
+  font-size: 24px;
+  border: 3px solid #f0f;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;/* カピゾウが真ん中へ */
+}
+
+p, ul {
+  text-align: center; /* pとulを真ん中へ */
+  margin-bottom: 20px; /* pとulの下に20pxの余白 */
+}
+
+a {
+  background-color: coral;
+  display: block; /* aブロック全て色付け */
+  }
+
+ul {
+  width: 300px; /* リストの幅を真ん中から300px幅指定 */
+  margin: 0 auto; /* リストを真ん中に */
+}

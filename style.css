@@ -1,25 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-h1 {
-    color: #333;
+header {
+    background-color: #6f4e37;
+    padding: 20px 0;
+    color: white;
 }
 
-p {
-    margin-bottom: 20px;
+.logo {
+    max-width: 100px;
 }
 
-ul {
-    background: #333;
-    color: #fff;
-    padding: 20px;
+.hero {
+    margin: 20px 0;
 }
 
-li {
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact h2 {
+    margin: 20px 0;
+}
+
+.contact p {
     margin: 5px 0;
 }
