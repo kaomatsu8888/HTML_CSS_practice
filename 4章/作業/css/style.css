@@ -36,9 +36,21 @@ p, ul {
 a {
   background-color: coral;
   display: block; /* aブロック全て色付け */
+  padding: 20px; /* aの中の文字の周りに20pxの余白 */
+  border-radius: 4px; /* aを角丸に */
+  color: #ffffff; /* aの文字色を白に */
+  font-weight: bold; /* aの文字を太字に */
   }
 
 ul {
   width: 300px; /* リストの幅を真ん中から300px幅指定 */
   margin: 0 auto; /* リストを真ん中に */
+}
+
+img {
+  border-radius: 50%; /* 画像を丸く切り抜く */
+}
+
+li {
+  margin-bottom: 20px; /* リストの下に10pxの余白 */
 }
