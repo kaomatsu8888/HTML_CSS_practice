@@ -81,3 +81,65 @@ aside nav ul { /* サイドバーのリストのスタイル */
 .categoryNav ul li a { /* カテゴリーナビゲーションのリンクのスタイル */
     color: #333333; /* 文字色を指定 */
     }
+
+.recentNav ul li { /* 最近の投稿のリストのスタイル */
+    border-bottom: 1px solid #7c5d48; /* 下部に線を引く */
+    padding-bottom: 10px; /* 下の余白を指定 */
+    margin-bottom: 22px; /* 下の余白を指定 */
+    }
+
+.recentNav ul { /* 最近の投稿のリストのスタイル */
+    height: 240px; /* 高さを指定 */
+    overflow: hidden scroll; /* スクロールバーを表示 */
+    }
+
+article h2 { /* 記事の見出しのスタイル */
+    font-size: 40px; /* フォントサイズを指定 */
+    font-weight: 500; /* 太さを指定 */
+    margin-bottom: 8px; /* 下の余白を指定 */
+    }
+
+time { /* 日付のスタイル */
+    background-color: #91c777; /* 背景色を指定 */
+    border-radius: 0px 22px 22px 22px; /* 角丸を指定 */
+    font-size: 18px; /* フォントサイズを指定 */
+    font-weight: bold; /* 太字 */
+    color: #ffffff; /* 文字色を指定 */
+    padding: 13px 25px 12px 20px; /* 余白を指定 */
+    display: inline-block; /* インラインブロック */
+}
+
+.postdate { /* 日付のスタイル */
+    margin-bottom: 26px; /* 下の余白を指定 */
+    }
+
+.eyecatch { /* アイキャッチ画像のスタイル */
+    margin-bottom: 26px; /* 下の余白を指定 */
+    }
+
+article h3 { /* 記事の見出しのスタイル */
+    border-bottom: 2px solid #6ab547; /* 下部に線を引く */
+    margin-bottom: 20px; /* 下の余白を指定 */
+    font-size: 28px; /* フォントサイズを指定 */
+    font-weight: 600; /* 太さを指定 */
+    background-image : url(../images/h2_icon.png); /* 背景画像を指定 */
+    background-repeat: no-repeat; /* 背景画像を繰り返さない */
+    background-position: left bottom; /* 背景画像の位置を指定 */
+    padding: 20px 10px 10px 48px; /* 余白を指定 */
+    }
+
+article section p { /* 記事の本文のスタイル */
+    line-height: 1.6; /* 行間を指定 */
+    margin-bottom: 24px ; /* 下の余白を指定 */
+    }
+
+article section {
+    margin-bottom: 50px; /* 下の余白を指定 */
+    }
+
+footer { /* フッターのスタイル */
+    background-color: #523f2e; /* 背景色を指定 */
+    color: #ffffff; /* 文字色を指定 */
+    text-align : center; /* 中央揃え */
+    padding: 14px 10px 2ox; /* 余白を指定 */
+    }
