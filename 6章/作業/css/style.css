@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+body {
+  background-image: url(../images/bg.jpg); /* 背景画像を指定 */
+  font-size: 16px; /* フォントサイズを指定 */
+font-family: 'arial','Hiragino Sans','Meiryo',sans-serif;
+  color:#333333; /* 文字色を指定 */
+}
+
+h1 {
+    text-align: center; /* 中央揃え */
+    padding: flex; /* 余白を指定 */
+}
+
+header nav ul { /* ナビゲーションメニューのスタイル */
+    display: flex; /* Flexboxを使う */
+    justify-content: center; /* 中央揃え */
+    border-top: 2px solid #7c5d48; /* 上部に線を引く */
+    border-bottom: 2px solid #7c5d48; /* 下部に線を引く */
+    background-color: rgba(255,255,255,0.42); /* 背景色を指定 */
+    padding: 12px 0px 10px; /* 余白を指定 */
+}
+header nav ul li { /* ナビゲーションメニューのリストのスタイル */
+    margin: 0 20px; /* 左右の余白を指定 */
+}
+
+header nav ul li a { /* ナビゲーションメニューのリンクのスタイル */
+    font-size: 22px; /* フォントサイズを指定 */
+    font-weight: bold; /* 太字 */
+    color: #7c5d48; /* 文字色を指定 */
+    }
+
+header nav ul li a:hover { /* ナビゲーションメニューのリンクにマウスを乗せたときのスタイル */
+    text-decoration: underline double; /* 下線を二重に */
+}
+
+div { /* メインコンテンツのスタイル */
+    width: 1240px; /* 幅を指定 */
+    margin: 0 auto 50px; /* 左右の余白を自動、下の余白を50px */
+    display: flex; /* Flexboxを使う */
+    justify-content: space-between; /* 両端揃え */
+    }
+
+main { /* メインコンテンツのスタイル */
+    flex-basis: 920px; /* メインコンテンツの幅を指定 */
+    background-color: #ffffff; /* 背景色を指定 */
+    border-radius: 16px; /* 角丸を指定 */
+    padding: 62px 70px 32px 72px; /* 余白を指定 */
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.16); /* 影を指定 */
+    }
+    
+aside { /* サイドバーのスタイル */
+    flex-basis: 284px; /* サイドバーの幅を指定 */
+    }
+
+aside nav { /* サイドバーのナビゲーションメニューのスタイル */
+    border-radius: 16px; /* 角丸を指定 */
+    background-color: #ffffff; /* 背景色を指定 */
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.16); /* 影を指定 */
+    padding: 24px; /* 余白を指定 */
+    margin-bottom: 24px; /* 下の余白を指定 */
+    }
+
+aside nav h2 { /* サイドバーの見出しのスタイル */
+    margin-bottom: 18px; /* 下の余白を指定 */
+    font-size: 22px; /* フォントサイズを指定 */
+    font-weight: bold; /* 太字 */
+    color: #7c5d48; /* 文字色を指定 */
+    }
+
+aside nav ul { /* サイドバーのリストのスタイル */
+    font-size: 14px; /* フォントサイズを指定 */
+    }
+
+.categoryNav ul li { /* カテゴリーナビゲーションのリストのスタイル */
+    list-style-type: square; /* リストのマーカーを四角に */
+    color: #7c5d48; /* 文字色を指定 */
+    margin: 0 0 16px 20px; /* 左の余白を指定 */
+    }
+
+.categoryNav ul li a { /* カテゴリーナビゲーションのリンクのスタイル */
+    color: #333333; /* 文字色を指定 */
+    }

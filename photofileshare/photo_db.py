@@ -31,7 +31,7 @@ def get_album_name(album_id):
 # アップロードされたファイルを保存 --- (*5)
 def save_file(user_id, upfile, album_id):
     # JPEGファイルだけを許可
-    if not re.search(r'\.(jpg|jpeg)$', upfile.filename):
+    if not re.search(r'\.(jpg|jpeg)$', upfile.filename): 
         print('JPEGではない:', upfile.filename)
         return 0
     # アルバム未指定の場合、未分類アルバムを自動的に作る --- (*6)

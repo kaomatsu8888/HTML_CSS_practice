@@ -2,15 +2,14 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/04_hover_step1.css"><!-- ←皆さんのファイルは css/style.css が読み込まれているのが正しいです -->
     <title>FARM CAPYZOU</title>
   </head>
   <body>
-  <!-- <head>はページの設定やリソースを定義する非表示部分に使われ、
-  <header>はページの見える部分で、訪問者に最初に表示されるコンテンツや
-  ナビゲーションを提供するために使用されます。 -->
-    <header><!-- 導入↑headとは違うので注意 -->
+    <header>
       <h1><img src="images/logo.png" alt="FARM CAPYZOU"></h1>
-      <nav><!-- navigation -->
+      <nav>
         <ul>
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -20,11 +19,11 @@
         </ul>
       </nav>
     </header>
-    <main><!-- そのページのメイン箇所に1回だけ使用する。今回はブログアプリなので記事の部分 -->
-      <article><!-- 自己完結してるとこニュースサイトやブログの記事など他：インスタの記事とかTwitterのつぶやきとか -->
+    <main>
+      <article>
         <h2>ファームの1日をご紹介します</h2>
         <p>
-          <time datetime="3021-08-08T12:03"> <!-- datetime属性は機械が理解できる形式で日時を記述する。 -->
+          <time datetime="3021-08-08T12:03">
             3021年8月8日12時3分
           </time>
         </p>
@@ -41,9 +40,9 @@
           </p>
           <figure>
             <img src="images/carrots.png" alt="形の悪いにんじんの絵">
-            <figcaption>形が悪くてぼくが食べたにんじんさんたち</figcaption> <!-- figcaptionはfigure要素の中に画像や図表の説明を記述するために使用する。 -->
+            <figcaption>形が悪くてぼくが食べたにんじんさんたち</figcaption>
           </figure>
-        </section> <!-- 1つの記事の中で複数のセクションを使うこともできます。 -->
+        </section>
         <section>
           <h3>8:30～12:30 スーパーや道の駅への出荷</h3>
           <p>採ったにんじんを産直店へ運びます。ここが一番の労働かもしれません。<br>そろそろリヤカーではなく、電気で動く車を買おうかなと思っているところです。</p>
@@ -58,7 +57,7 @@
         </section>
       </article>
     </main>
-    <aside><!-- そのページの補足情報や関連情報を表示するために使用する例： -->
+    <aside>
       <nav>
         <h2>Category</h2>
         <ul>
@@ -83,8 +82,8 @@
         <a href="#"><img src="images/side_banner.png" alt="オンラインショップバナー"></a>
       </p>
     </aside>
-    <footer> <!-- ページの最下部にあるコンテンツ足（foot）から来てる -->
-      <p><small>© 3021 FARM CAPYZOU</small></p> <!-- small要素は、小さな文字を表現するために使用する。 -->
+    <footer>
+      <p><small>© 3021 FARM CAPYZOU</small></p>
     </footer>
   </body>
 </html>
