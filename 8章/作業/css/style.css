@@ -12,7 +12,6 @@ body {
   }
 
 .innerWrap { /* 作業しやすくするために色で強調 */
-  border: 4px solid lightblue; 
   width: 1240; /* 幅を指定 */
   margin: 0 auto; /* 中央寄せ */
   padding: 80px 20px 0; /* 上下左右の余白 */
@@ -81,9 +80,134 @@ margin-bottom: 40px; /* 下部に余白を追加 */
 .msgSec p.illust { /* イラスト */
   margin-top: 80px; /* 上部に余白を追加 */
   margin-bottom: 0; /* 下部の余白を削除 */
+  position: relative; /* 相対位置は自身の位置を基準 */
   }
+
+.msgSec p.illust::before { /* 葉っぱイラストの装飾 */
+  content: url(../images/deco_left.png); /* 左側の装飾 */
+  position: absolute; /* 絶対位置は自身の位置を基準 */
+  left: 320px; /* 左端から320px */
+  bottom: -30px; /* 下端から30px */
+}
 
 header nav ul li a:hover { /* ホバー時のスタイル */
   text-decoration: underline; /* 下線を追加 */
 }
+
+.msgSec p.illust::after { /* 葉っぱイラストの装飾 */
+  content: url(../images/deco_right.png); /* 右側の装飾 */
+  position: absolute; /* 絶対位置は自身の位置を基準 */
+  right: 320px; /* 右端から320px */
+  bottom: -30px; /* 下端から30px */
+}
+
+.dateSec .layoutWrap { /* レイアウト */
+  display: flex; /* 横並び */
+}
+.dateSec .layoutWrap > p {
+flex-basis:  735px; /* 幅を指定 */
+}
+.dateSec .layoutWrap > div {
+  flex-basis:  456px; /* 幅を指定 */
+  padding-top: 100px; /* 上部に余白を追加 */
+}
+.dateSec .dateDetailSec { /* 日付詳細 */
+  font-size: 72px; /* フォントサイズを指定 */
+  margin: 0 0 170px -100px; /* 下部に余白を追加 */
+  background-color: #ffffff; /* 背景色を指定 */
+  padding: 40px 64px; /* 上下左右の余白 */
+  line-height: 1.2; /* 行間を1.2倍に */
+}
+select {
+  background: #ffffff url(../images/arrow.png) no-repeat 98% 50%/17px 10px; /* 矢印を追加 */
+  }
+
+
+.word1 {font-size: 50px;}
+.word2 {font-size: 40px;}
+.word3 {font-size: 60px;}
+.accessSec {
+  margin-left: 48px;
+}
+.accessSec h3 {
+  color: #cfafa3;
+  font-size: 55px;
+  letter-spacing: .05em;
+  margin-bottom: 8px;
+}
+.accessSec p {
+  line-height: 1.6;
+}
+.formSec {
+  background-color: #efe8d9;
+  padding-bottom: 60px;
+}
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 5px;
+  padding: 4px 8px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  vertical-align: baseline;
+  margin-right: 4px;
+}
+.attendRadio {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.attendRadio label {
+  margin: 0 20px;
+  font-size: 24px;
+}
+.allergyCheck label {
+  margin-right: 24px;
+}
+textarea {
+  height: 148px;
+  margin-bottom: 30px;
+}
+form > p {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.submitBtn {
+  text-align: center;
+}
+input[type="submit"] {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 18px 80px;
+}
+footer {
+  background-color: #c7887f;
+  color: #f3e9e5;
+  padding: 14px 10px 20px;
+  text-align: center;
+}
+.dateSec { 
+  margin-bottom: 480px; /* 下部に余白を追加 */
+}
+.dateSec::after { /* 葉っぱイラストの装飾 */
+  content: ""; /* コンテンツを追加 */
+  position: fixed; /* 固定位置はブラウザの位置を基準 */
+  left: 0; /* 左端 */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.jpg) no-repeat center/cover; /* 背景画像 */
+  z-index: -1; /* 重なり順を指定.z軸 */
+}
+
 
