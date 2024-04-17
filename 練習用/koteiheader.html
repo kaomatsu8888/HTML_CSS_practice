@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Fixed Header</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .fixed-header {
+    position: fixed; /* ヘッダーを画面上部に固定 */
+    width: 100%; /* 全幅 */
+    background-color: #333; /* 背景色 */
+    color: white; /* 文字色 */
+    text-align: center; /* テキストを中央揃え */
+    padding: 10px 0; /* 上下のパディング */
+    top: 0; /* トップからの位置 */
+    left: 0; /* 左からの位置 */
+    z-index: 1000; /* 他の要素より前面に */
+  }
+  .content {
+    margin-top: 50px; /* 固定ヘッダーの高さ分余白を設定 */
+    padding: 20px;
+    height: 2000px; /* スクロールできるようにコンテンツ領域を大きく設定 */
+  }
+</style>
+</head>
+<body>
+  <div class="fixed-header">
+    固定ヘッダーメニュー
+  </div>
+  <div class="content">
+    ページコンテンツがここに入ります。スクロールしてもヘッダーは固定されたままです。
+  </div>
+</body>
+</html>

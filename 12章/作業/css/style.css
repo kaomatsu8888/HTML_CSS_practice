@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* Google Fonts使用 */
+body { /* 全体の設定 */
+font-family: 'Catamaran', 'Noto Sans JP', sans-serif; /* フォント指定 */
+font-size: 16px; /* フォントサイズ */
+line-height: 1.5; /* 行間 */
+color: #2c2c2c; /* 文字色 */
+}
+img { /* 画像がはみ出さないように */
+max-width: 100%;
+}
+.topPage header { /* ヘッダー */
+height: 90vh; /* 画面の90%の高さ */
+background: url(../images/top_bg.jpg) no-repeat center center/cover; /* 背景画像 */
+padding-top: 50px; /* 上部の余白 */
+margin-top: 64px; /* 上部の余白 */
+}
+.topPage header h1 img { /* ロゴ */
+width: 240px; /* 幅 */
+}
+.topPage header h1 { /* キャッチコピー */
+text-align: center; /* 中央揃え */
+}
+.linkList { /* リンクリスト */
+padding: 0 20px; /* 左右の余白 */
+}
+.linkList li { /* リンクリストのリンク */
+margin-bottom: 40px; /* 下の余白 */
+}
+.linkList li a { /* リンクリストのリンク範囲を広げる */
+display: block; /* ブロック要素化 */
+background-color: #f5f5f5; /* 背景色 */
+}
+.linkList li a span { /* リンクリストのリンクテキスト */
+display: block; /* ブロック要素化 */
+padding: 12px 15px 10px; /* 上右下左の余白 */
+font-size: 18px; /* フォントサイズ */
+}
+.linkList li a:hover { /* リンクリストのリンクホバー時 */
+filter: brightness(105%); /* 明るさ */
+}
+.subPage header { /* ヘッダーconseptの部分 */
+border-top: 14px solid #f5f5f5; /* 上部のボーダー */
+padding-top: 40px; /* 上部の余白 */
+margin-bottom: 30px; /* 下部の余白 */
+}
+.subPage header h1 { /* サブページのタイトル */
+text-align: center; /* 中央揃え */ 
+font-size: 42px; /* フォントサイズ */
+font-weight: 700; /* 太字 */
+letter-spacing: .17em; /* 文字間 */
+text-transform: uppercase; /* 大文字 */
+}
+.subPage header h1 span { /* サブページのタイトルの一部 */
+background-image: linear-gradient(135deg,#e6ba5d 0%,#9ac78a 100%); /* グラデーション */
+-webkit-background-clip: text; /* テキストにグラデーションを適用 */
+-moz-background-clip: text; /* テキストにグラデーションを適用 */
+background-clip: text; /* テキストにグラデーションを適用 */
+color: transparent; /* テキストを透明に */
+}
+.subPage h2 {
+font-size: 20px; /* フォントサイズ */
+font-weight: 700; /* 太字 */
+text-align: center; /* 中央揃え */
+letter-spacing: .17em; /* 文字間 */
+margin-bottom: 10px; /* 下部の余白 */
+}
+.subPage .lead { /* リード文 */
+text-align: center; /* 中央揃え */
+margin-bottom: 30px; /* 下部の余白 */
+font-size: 11px; /* フォントサイズ */
+letter-spacing: .05em; /* 文字間 */
+line-height: 2; /* 行間 */
+}
+.subPage h3 { /* サブページの見出し */
+font-size: 30px; /* フォントサイズ */
+font-weight: 700; /* 太字 */
+text-align: center; /* 中央揃え */
+margin-bottom: 30px; /* 下部の余白 */
+}
+.subPage main { /* メインコンテンツ */
+padding: 0 20px; /* 左右の余白 */
+} 
+footer {    /* フッター */
+background: url(../images/footer_mt.svg) no-repeat right top/200px; /* 背景画像 */
+margin-top: 60px; /* 上部の余白 */
+padding-top: 68px; /* 上部の余白 */
+}
+footer p { /* フッターのテキスト */
+background-color: #f5f5f5;
+}
+footer p img { /* フッターの画像ロゴ位置調整 */
+width: 188px; /* 幅 */
+transform: translateY(-28px); /* 位置調整 */
+}
+.conceptDetailSec p img { /* 画像の位置調整 */
+height: 180px; /* 高さ */
+width: 100%; /* 幅 */
+object-fit: cover; /* カバー写真の歪みを修正 */
+object-position: center 90%; /* 位置調整 */
+}
+.conceptDetailSec .text { /* テキストfleshの下 */
+font-size: 12px; /* フォントサイズ */
+line-height: 1.78; /* 行間 */
+}
+.conceptDetailSec .photo { /* 写真 */
+margin-bottom: 14px; /* 下部の余白 */
+}
+.conceptDetailSec { /* コンセプト詳細 */
+  margin-bottom: 50px; /* 下部の余白 */
+}
+.menuList { /* メニューリスト */
+  display: flex; /* フレックスボックス横並びに */
+  flex-wrap: wrap; /* 折り返し */
+  justify-content: space-around; /* 中央揃え */
+}
+.menuList li { 
+flex-basis: 42%; /* 幅 */
+}
+.menuList li img { /* メニューリストの画像 */
+filter: drop-shadow(1px 2px 3px #dddddd); /* 影 */
+}
+.menuDetailSec { /* メニュー詳細 */
+  margin-bottom: 50px; /* 下部の余白 */
+}
+.map iframe { /* 地図 */
+  width: 100%; /* 幅 */
+  height: 240px; /* 高さ */
+  margin-bottom: 8px; /* 地図下部の余白 */
+}
+.map { /* 地図 */
+font-size: 12px; /* フォントサイズ */
+margin-top: 60px; /* 上部の余白 */
+}
+.photoGarelly { /* 写真ギャラリー */
+  display: grid; /* グリッド */
+}
+.photoGarelly {
+display: grid; /* グリッド */
+grid-template-rows: 40vw 30vw 30vw 40vw 40vw; /* 行の高さ */
+grid-template-columns: 50% 50%; /* 列の幅 */
+}
+.item01 {
+grid-row-start: 1;/* rowは縦の比率今回はmax6で設定 */
+grid-row-end: 2;
+grid-column-start: 1;/* columnは横の比率今回はmax3で設定 */
+grid-column-end: 3;
+}
+.item02 {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+}
+.item03 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.item04 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+.item05 {
+  grid-row: 4 / 5;
+  grid-column: 1 / 3;
+}
+.item06 {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+.item07 {
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
+}
+.photoGarelly li img { /* 写真ギャラリーの画像 */
+width: 100%; /* 幅 */
+height: 100%; /* 高さ */
+object-fit: cover; /* カバー写真の歪みを修正 */
+}
