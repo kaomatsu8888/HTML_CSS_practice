@@ -1,0 +1,63 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+header {
+	width: 820px;
+	height: 70px;
+	margin: 20px auto 20px auto;
+	position: relative;
+}
+header h1 {
+	position: absolute;
+}
+nav {
+	position: absolute;
+	right: 0;
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+}
+footer {
+	margin-bottom: 0;
+	padding: 14px 0 14px 0;
+	background-image: url(../images/footer_bg.png);
+	background-repeat: repeat-x;
+	text-align: center;
+}
+nav ul li a:hover {
+	opacity: 0.6;
+}
+footer small {
+	font-size: 100%;
+}
+/* 基本レイアウト ここまで↑ */
+
+/* 「コンセプト」ページ ここから↓ */
+#main h1 {
+	margin: 0 0 20px 0; /* 余白を設定 */
+	padding: 0 0 5px 40px; /* 余白を設定 */
+	border-bottom: 2px solid #0b3cc1; /* 下線を引く */
+	background-image:  url(../images/h1_icon.png); /* 画像を背景に設定 */
+	background-repeat: no-repeat; /*  画像の繰り返しを止める */
+	font-size: 150%; /* フォントサイズを設定 */
+	}
+.image_right {
+	margin-bottom: 20px; /* 余白を設定 */
+	margin-left: 20px; /* 余白を設定 */
+	float : right; /* 右寄せにする */
+}
+
+/* 「コンセプト」ページ ここまで↑ */
+
+/* 「航空券のご案内」ページ ここから↓ */
+
+/* 「航空券のご案内」ページ ここまで↑ */
+
+/* 「お問い合わせ」ページ ここから↓ */
+
+/* 「お問い合わせ」ページ ここまで↑ */
