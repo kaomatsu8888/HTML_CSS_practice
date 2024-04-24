@@ -1,0 +1,97 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+
+/* url()の中にはファイルのパスを指定します。 */
+body {
+    background-color: #f3f2e9;
+    color: #5f5039;
+}
+
+header,
+nav,
+#breadcrumb,
+#contents,
+footer {
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+header h1 {
+    margin: 0 0 26px 0;
+    padding-top: 28px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    width: 210px;
+    float: left;
+}
+nav ul li a {
+    display: block; /* ブロック要素に変更 */
+    height: 0; /* 高さを0に設定 */
+    padding-top: 44px; /* 上部の余白を設定 */
+    overflow: hidden; /* 要素の内容を隠す */
+}
+nav ul li#nav_consept a {
+    background-image: url(../images/nav1.png); /* 画像を背景に設定 */
+}
+nav ul li#nav_plan a {
+    background-image: url(../images/nav2.png); /* 画像を背景に設定 */
+}
+nav ul li#nav_fair a {
+    background-image: url(../images/nav3.png); /* 画像を背景に設定 */
+}
+nav ul li#nav_contact a {
+    background-image: url(../images/nav4.png); /* 画像を背景に設定 */
+}
+#main {
+    width: 570px;
+    float: left;
+    }
+#sub {
+width: 230px;
+float: right;
+}
+footer {
+    padding-top: 70px;
+    }
+#main h1 {
+    margin: 0 0 30px 0;
+    padding: 35px 0 35px 65px;
+    background-image: url(../images/bg_h1_head.png),url(../images/bg_h2_bottom.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: left top,right bottom;
+    font-size: 150%;
+    }
+
+/* 基本レイアウト ここまで↑ */
+
+/* トップページ ここから↓ */
+
+/* トップページ ここまで↑ */
+
+/* 「結婚式場のコンセプト」ページ ここから↓ */
+
+/* 「結婚式場のコンセプト」ページ ここまで↑ */
+
+/* 「プランのご案内」ページ ここから↓ */
+
+/* 「プランのご案内」ページ ここまで↑ */
+
+/* 「ブライダルフェア」ページ ここから↓ */
+
+/* 「ブライダルフェア」ページ ここまで↑ */
+
+/* 「お問い合わせ」ページ ここから↓ */
+
+/* 「お問い合わせ」ページ ここまで↑ */

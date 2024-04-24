@@ -55,9 +55,21 @@ footer small {
 /* 「コンセプト」ページ ここまで↑ */
 
 /* 「航空券のご案内」ページ ここから↓ */
-
+table th, table td {
+	width: 130px;
+	padding: 10px;
+	border: 1px solid #000;
+}
 /* 「航空券のご案内」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
-
+form {
+	margin-top: 30px;
+	}
+	input.input_box, textarea {
+		width: 300px;
+	}
+	input.input_box {
+		margin-bottom: 10px;
+	}
 /* 「お問い合わせ」ページ ここまで↑ */

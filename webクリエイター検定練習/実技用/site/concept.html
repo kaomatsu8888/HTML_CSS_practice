@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8"><!--  http-equiv="Content-Type" content="text/html; 消したあと"を足した -->
-	<!-- <meta http-equiv="Content-Style-Type" content="text/css"> -->消しました
-	<title>航空券のご案内 : SKY RIBBON AIRLINES</title>
+	<!-- <meta http-equiv="Content-Style-Type" content="text/css"> -->
+	<title>お問い合わせ : SKY RIBBON AIRLINES</title>
 	<link rel="stylesheet" href="css/style.css"><!-- type="text/css"を削除 -->
 </head>
 
@@ -24,32 +24,21 @@
 	<div id="contents">
 		<div id="main">
 			<article>
-				<h1>航空券のご案内</h1>
+				<h1>お問い合わせ</h1>
 				<table border="1"><!-- 線が出てくる -->
-
-				<td class="point">特徴</td>
-				<td class="limit">予約期限</td>
-				</tr>
-				<tr>
-					<td>ビジネスクラス</td>
-					<td class="point">専用のラウンジ、サービスをご利用いただけます。</td>
-					<td class="limit" rowspan="3">当日</td><!-- 3つ結合する -->
-				</tr>
-				<tr>
-					<td>セミビジネスクラス</td>
-					<td class="point">お席はビジネスクラスをご用意いたします。ラウンジはご利用いただけません。</td>
-					<td class="limit">当日</td>
-				</tr>
-				<tr>
-					<td>エコノミークラス</td>
-					<td class="point">通常のお席になります。</td>
-				</tr>
-				<tr>
-					<td>早得</td>
-					<td class="point">ご搭乗日の45日前までにご予約いただくと、お得な運賃でご利用いただけます。</td>
-					<td class="limit">ご搭乗日の45日前</td>
-				</tr>
-				</table>
+				<p>予約や運賃に関するご質問など承ります。
+				サービス向上のため、その他ご意見・ご要望もお待ちしております。</p>
+				<ul>
+				<li>お問い合わせ内容にはご連絡先も入力してください。</li>
+				<li>お問い合わせいただいてから24時間以内にご連絡いたします。</li>
+				</ul>
+				<form action="#"><!-- fromと間違わない用に注意-->
+					<p><label>お名前<br>
+					<input type="text" name="name" class="input_box"></label></p>
+					<p><<label>お問い合わせ内容</p>
+					<textarea name="message"></textarea><label></p>
+					<p><input type="submit" value="確認画面へ" ></p>
+				</form>
 			</article>
 		</div>
 	</div>
