@@ -74,24 +74,103 @@ footer {
     font-size: 150%;
     }
 
+/* CSSスプライトを用いて、「concept.html」、「plan.html」、「fair.html」、「contact.html」のナビゲーション領域で、現在表示されているページのリンクの背景画像が変わるようにし、
+各リンクにロールオーバーを設定する。 */
+#concept #nav_consept a, #plan #nav_plan a, #fair #nav_fair a, #contact #nav_contact a {
+    background-position: 0 -45px;
+}
+
+
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
+/* トップページの「お知らせ」のリストにスタイルを設定する。
 
+セレクター	#news ul
+リストマーカーの種類	なし
+左パディング	0
+セレクター	#news ul li
+パディング	上: 20ピクセル、下: 20ピクセル、左: 175ピクセル、右: 0
+下ボーダー	太さ: 1ピクセル、スタイル: 点線、色: #6c5f45
+文字色	#342300
+インデント	-175ピクセル */
+#news ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+#news ul li {
+	padding: 20px 0 20px 175px;
+	border-bottom: 1px dotted #6c5f45;
+	color: #342300;
+	text-indent: -175px;
+}
 /* トップページ ここまで↑ */
 
 /* 「結婚式場のコンセプト」ページ ここから↓ */
 
+
+/*  クラス「concept_box」の設定
+section要素の余白を空けるためにクラス「concept_box」のスタイルを設定する。
+
+セレクター	.concept_box
+下マージン	30ピクセル
+オーバーフロー	hidden */
+.concept_box {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+/* メイン領域をトップページの余白と合わせるためにクラス「concept_box」のスタイルを設定する。
+セレクター	.concept_box:last-child
+下マージン	0 */
+.concept_box:last-child {
+	margin-bottom: 0;
+}
 /* 「結婚式場のコンセプト」ページ ここまで↑ */
 
 /* 「プランのご案内」ページ ここから↓ */
+/*   テーブルの設定
+テーブルに交互の背景色を設定する。
+セレクター	table thead tr th
+背景色	#eee8cc
+セレクター	table tbody tr:nth-child(奇数のアルファベット値を設定)
+背景色	#ffffff
+ */
 
+table thead tr th {
+	background-color: #eee8cc;
+}
+table tbody tr:nth-child(odd) {
+	background-color: #ffffff;
+}
 /* 「プランのご案内」ページ ここまで↑ */
 
 /* 「ブライダルフェア」ページ ここから↓ */
+/* サムネイルを横並びにし、スタイルを設定する。
+
+セレクター	.gallery_box figure
+幅	180ピクセル
+マージン	上: 0、下: 15ピクセル、左: 15ピクセル、右: 0
+フロート	左 */
+.gallery_box figure {
+	width: 180px;
+	margin: 0 0 15px 15px;
+	float: left;
+}
+/* サムネイルの三列目がカラム落ちしないように、マージンを設定する。
+セレクター	.gallery_box figure:first-child
+左マージン	0 */
+.gallery_box figure:first-child {
+	margin-left: 0;
+}
 
 /* 「ブライダルフェア」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
-
+input[type="text"] {
+	width: 200px;
+}
+input[type="email"] {
+	width: 300px;
+}
 /* 「お問い合わせ」ページ ここまで↑ */

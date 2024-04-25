@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>動物園について : ZOO LOGICAL</title>
+    <link rel="stylesheet" href="css/style.css"><!-- linkは外部ファイルを読み込み.relはリンクの関係性を指定.hrefはリンク先のURLを指定 -->
+</head>
+
+<body>
+    <header id="top">
+        <!--  
+header要素の中に、画像「logo.png」を挿入し、以下の代替テキストをコピー&ペーストする。
+代替テキスト	ZOO LOGICAL幅	(属性は省略)高さ	(属性は省略) -->
+        <h1><a href="index.html"><img src="images/logo.png" alt="ZOO LOGICAL"></a></h1>
+    </header><!-- セクションで文章の塊にheaderを入れても良い -->
+    <!--  ナビゲーション領域の設定
+（仕上り見本「各領域の名称」を参照）
+header要素の次の行に、nav要素を挿入する。 -->
+    <nav>
+        <!--  
+nav要素の中に、以下のテキストをコピー&ペーストし、箇条書きリストをul要素、li要素でマークアップする。
+なお、これらのテキストに、リンクと、それを内包するli要素のid属性を設定すること。
+
+テキスト	動物園について
+リンク先	about.html
+li要素のid名	nav_about
+テキスト	ガイドのご案内
+リンク先	guide.html
+li要素のid名	nav_guide
+テキスト	人気の動物たち
+リンク先	animals.html
+
+li要素のid名	nav_animals
+テキスト	お問い合わせ
+リンク先	contact.html
+li要素のid名	nav_contact -->
+        <ul>
+            <li id="nav_about"><a href="about.html">動物園について</a></li>
+            <li id="nav_guide"><a href="guide.html">ガイドのご案内</a></li>
+            <li id="nav_animals"><a href="animals.html">人気の動物たち</a>
+            <li id="nav_contact"><a href="contact.html">お問い合わせ</a></li>
+    </nav>
+    <!--  パンくずリスト領域の設定
+（仕上り見本「各領域の名称」を参照）
+nav要素の次の行に、div要素を挿入し、id属性「path」を設定するとともに、以下のソースをコピー&ペーストする。 -->
+    <div id="path">
+
+        <ol>
+            <li><a href="index.html">ホーム</a></li>
+            <li>動物園について</li>
+        </ol>
+        </ul>
+    </div>
+    <div id="contents"><!-- 1ページにidは1つだけ-->
+        <div id="main">
+            <article>
+	<h1>お問い合わせ</h1>
+			<p>環境学習のご相談や動物に関する疑問など、お気軽にお問い合わせください。</p>
+			<ul>
+				<li>必要事項を記入し、「確認する」をクリックしてください。</li>
+				<li>ご記入いただいた個人情報は、お問い合わせの回答以外には使用いたしません。</li>
+			</ul>
+			<form action="#">
+				<p><label>お名前（必須）<br>
+				<input type="text" name="name" required></label></p>
+				<p><label>メールアドレス（必須）<br>
+				<input type="email" name="mail" required></label></p>
+				<p>お問い合わせ種類<br>
+				<label><input type="radio" name="kind" value="0">環境学習に関すること</label>
+				<label><input type="radio" name="kind" value="1">その他</label></p>
+				<p><label>お問い合わせ内容<br>
+				<textarea name="message"></textarea></label></p>
+				<p><input type="submit" value="確認する"></p>
+			</form>
+            </article>
+        </div>
+<div id="sub">
+		<aside>
+			<div class="bnr_area">
+				<a href="guide.html">
+					<dl>
+						<dt><img src="images/bnr_guide.png" alt="ガイドのご案内"></dt>
+						<dd>飼育員が動物たちをご紹介</dd>
+					</dl>
+				</a>
+			</div>
+			<div class="bnr_area">
+				<a href="contact.html">
+					<p><img src="images/bnr_contact.png" alt="お問い合わせ"></p>
+				</a>
+			</div>
+		</aside>
+	</div>
+</div>
+<footer>
+	<p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+	<address>山梨県富士吉田市X-X-X 電話 0120-XXX-XXX 営業時間 9:00～17:00(休園日：月曜日、年末年始)</address>
+	<p id="copyright"><small>Copyright 2014 ZOO LOGICAL All rights reserved.</small></p>
+</footer>
+</body>
+</html>
+
+</html>

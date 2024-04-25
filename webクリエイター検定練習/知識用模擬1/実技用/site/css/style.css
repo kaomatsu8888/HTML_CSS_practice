@@ -1,0 +1,145 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css); /* common.cssを読み込む */
+
+body {
+    background-image: url(../images/bg.png);
+    background-position: repeat-x;
+    background-position: center top;
+    color: #666666;
+}
+header, nav, #path, #contents, footer {
+    width: 860px; /* 幅を指定。幅以下になると中央に寄せる */
+    margin: 0 auto; /* 左右の余白を自動で設定 */
+}
+header h1 {
+    margin: 0 0 26px 0; /* 上下左右の余白を設定 */
+    padding-top: 18px; /* 上部の余白を設定 */
+    text-align: center; /* 中央寄せにする */
+}
+nav ul {
+    list-style-type: none; /* リストのマーカーを消す */
+    margin: 0 0 20px 0; /* 上下左右の余白を設定 */
+    padding-left: 0; /* 左の余白を消す */
+    overflow: hidden; /* 要素の内容を隠す */
+}
+nav ul li {
+    width: 215px; /* 幅を指定 */
+    float: left; /* 左寄せにする */
+}
+nav ul li a {
+    display: block; /* ブロック要素に変更 */
+    height: 0; /* 高さを0に設定 */
+    padding-top: 60px; /* 上部の余白を設定 */
+    overflow: hidden; /* 要素の内容を隠す */
+}
+/* 画像置換によって表示するリンクの画像を設定する。 */
+nav ul li#nav_about a {
+	background-image: url(../images/nav1.png);
+}
+nav ul li#nav_guide a {
+	background-image: url(../images/nav2.png);
+}
+nav ul li#nav_animals a {
+	background-image: url(../images/nav3.png);
+}
+nav ul li#nav_contact a {
+	background-image: url(../images/nav4.png);
+}
+#main {
+    width: 570px; /* 幅を指定 */
+    padding: 20px; /* 内側の余白を設定 */
+    background-color: #ffffff; /* 背景色を設定 */
+    float: left; /* 左寄せにする */
+}
+/* サブ領域のスタイルを設定する。
+セレクター	#sub
+幅	240ピクセル
+フロート	右 */
+#sub {
+    width: 240px; /* 幅を指定 */
+    padding: 20px; /* 内側の余白を設定 */
+    background-color: #ffffff; /* 背景色を設定 */
+    float: right; /* 右寄せにする */
+}
+footer {
+    padding-top: 10px; /* 上部の余白を設定 */
+}
+/* メイン領域のh1要素の設定
+メイン領域のh1要素にスタイルを設定する。
+セレクター	#main h1
+下マージン	30ピクセル
+パディング	上: 0、下: 20ピクセル、左: 10ピクセル、右: 40ピクセル
+背景画像(複数指定)	1枚目: bg_h1_left.png、2枚目: bg_h1_bottom.gif
+背景画像の繰り返し(複数指定)	1枚目: なし、2枚目: 横方向のみ繰り返し
+背景画像の位置(複数指定)	1枚目の水平方向: 右、1枚目の垂直方向: 上、2枚目の水平方向: 左、2枚目の垂直方向: 下
+文字のサイズ	180% */
+#main h1 {
+    margin: 0 0 30px 0; /* 下マージンを設定 */
+    padding: 0 40px 20px 10px; /* パディングを設定 */
+    background-image: url(../images/bg_h1_left.png), url(../images/bg_h1_bottom.gif); /* 背景画像を複数指定 */
+    background-repeat: no-repeat, repeat-x; /* 背景画像の繰り返しを設定 */
+    background-position: right top, left bottom; /* 背景画像の位置を設定 */
+    font-size: 180%; /* フォントサイズを設定 */
+}
+/* CSSスプライトを用いて、「about.html」、「guide.html」、「animals.html」、「contact.html」のナビゲーション領域で、
+現在表示されているページのリンクの背景画像が変わるようにし、各リンクにロールオーバーを設定する
+セレクター	#about #nav_about a, #guide #nav_guide a, #animals #nav_animals a, #contact #nav_contact a, nav ul li a:hover
+背景画像の位置	 */
+#about #nav_about a, #guide #nav_guide a, #animals #nav_animals a, #contact #nav_contact a {
+    background-position: 0 -60px; /* 背景画像の位置を設定 */
+}
+/* 基本レイアウト ここまで↑ */
+
+/* トップページ ここから↓ */
+#news ul {
+	list-style-type: none; /* リストのマーカーを消す */
+	padding-left: 0; /* 左の余白を消す */
+}
+#news ul li {
+	padding: 20px 0 20px 160px; /* 上下左右の余白を設定 */
+	border-bottom: 1px dotted #fb484e; /* 下線を引く */
+	text-indent: -160px; /* インデントを設定 */
+}
+/* トップページ ここまで↑ */
+
+/* 「動物園について」ページ ここから↓ */
+.about_area {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.about_area:last-child {
+	margin-bottom: 0;
+}
+/* 「動物園について」ページ ここまで↑ */
+
+/* 「ガイドのご案内」ページ ここから↓ */
+table thead tr th {
+	background-color: #ffdd63;
+}
+table tbody tr:nth-child(even) td {
+	background-color: #eef8fa;
+}
+/* 「ガイドのご案内」ページ ここまで↑ */
+
+/* 「人気の動物たち」ページ ここから↓ */
+.animals_area figure {
+	width: 265px;
+	margin: 0 0 15px 20px;
+	float: left;
+	overflow: hidden;
+}
+.animals_area figure:first-child {
+	margin-left: 0;
+}
+/* 「人気の動物たち」ページ ここまで↑ */
+
+/* 「お問い合わせ」ページ ここから↓ */
+input[type="text"] {
+	width: 200px;
+}
+input[type="email"] {
+	width: 300px;
+}
+/* 「お問い合わせ」ページ ここまで↑ */
